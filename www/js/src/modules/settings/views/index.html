@@ -1,8 +1,10 @@
 <br />
-<div class="panel panel-default">
+<div class="panel panel-default" ng-show="backend.url">
     <div class="panel-heading">Backend Config</div>
     <div class="panel-body">
         <form novalidate ng-submit="form.submit()" id="frm" name="frm">
+            <div class="alert alert-danger" ng-show="form.error">Something went wrong.</div>
+
             <div class="form-group">
                 <label class="control-label">Backend root url</label>
                 <input type="text" class="form-control" ng-model="backend.url" ng-required="true" name="url" />

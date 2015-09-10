@@ -1,6 +1,7 @@
 # Mac
+.idea
 .DS_Store
-
+www/js/app.js
 # Node
 npm-debug.log
 /node_modules
